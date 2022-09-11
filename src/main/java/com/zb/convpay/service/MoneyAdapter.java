@@ -1,7 +1,9 @@
 package com.zb.convpay.service;
 
 import com.zb.convpay.type.*;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MoneyAdapter implements PaymentInterface{
     public MoneyUseResult use(Integer payAmount){
         System.out.println("MoneyAdapter.use : " + payAmount);

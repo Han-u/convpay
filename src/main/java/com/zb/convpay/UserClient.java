@@ -18,8 +18,8 @@ public class UserClient {
 //        ApplicationConfig applicationConfig = new ApplicationConfig();
 //        ConveniencePayService conveniencePayService = applicationConfig.conveniencePayServiceDiscountPayMethod();
 
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-//         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
+//        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
 
         ConveniencePayService conveniencePayService = applicationContext.getBean("conveniencePayService", ConveniencePayService.class);
 

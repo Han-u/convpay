@@ -5,11 +5,13 @@ import com.zb.convpay.dto.PayCancelResponse;
 import com.zb.convpay.dto.PayRequest;
 import com.zb.convpay.dto.PayResponse;
 import com.zb.convpay.type.*;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+@Component
 public class ConveniencePayService {
 //    private final MoneyAdapter moneyAdapter = new MoneyAdapter();
 //    private final CardAdapter cardAdapter = new CardAdapter();

@@ -1,7 +1,9 @@
 package com.zb.convpay.service;
 
 import com.zb.convpay.dto.PayRequest;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DiscountByConvenience implements DiscountInterface{
 
     @Override
