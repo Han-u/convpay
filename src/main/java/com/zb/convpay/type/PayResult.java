@@ -1,4 +1,4 @@
-package com.zb.convpay.dto;
+package com.zb.convpay.type;
 
 public enum PayResult {
     SUCCESS,
