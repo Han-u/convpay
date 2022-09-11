@@ -1,9 +1,6 @@
 package com.zb.convpay.service;
 
-import com.zb.convpay.type.CancelPaymentResult;
-import com.zb.convpay.type.CardUseCancelResult;
-import com.zb.convpay.type.CardUseResult;
-import com.zb.convpay.type.PaymentResult;
+import com.zb.convpay.type.*;
 
 public class CardAdapter implements PaymentInterface{
     // 1. 인증
@@ -30,6 +27,11 @@ public class CardAdapter implements PaymentInterface{
             return CardUseCancelResult.USE_CANCEL_FAIL;
         }
         return CardUseCancelResult.USE_CANCEL_SUCCESS;
+    }
+
+    @Override
+    public PayMethodType getPayMethodType() {
+        return PayMethodType.CARD;
     }
 
     @Override
